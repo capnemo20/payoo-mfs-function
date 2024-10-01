@@ -5,5 +5,13 @@ document
 
     const addMoney = getInputFieldValueById("input-add-money");
     const pinNumber = getInputFieldValueById("input-pin-number");
-    console.log("add money inside addMoney2.js", addMoney, pinNumber);
+    // console.log("add money inside addMoney2.js", addMoney, pinNumber);
+
+    if (pinNumber === 1234) {
+      const balance = getTextFieldValueById("account-balance");
+      const newBalance = balance + addMoney;
+      document.getElementById("account-balance").innerText = newBalance;
+    } else {
+      alert("failed to add money");
+    }
   });
