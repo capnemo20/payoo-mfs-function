@@ -26,12 +26,56 @@
             </div>
             <div class="divider"></div>
 
-            <!-- ------features------ -->
+            <!-- ------features starts------ -->
+            <div>
+              <button class="btn btn-lg">Add Money</button>
+              <button class="btn btn-lg">Cash Out</button>
+            </div>
+            <!-- ------features ends------ -->
+            <div class="divider"></div>
+
+            <!-- -----Add Money Form Start---- -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Add Money Amount</span>
+                  </label>
+                  <input
+                    id="input-add-money"
+                    type="text"
+                    placeholder="Amount"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin Number</span>
+                  </label>
+                  <input
+                    id="input-pin-number"
+                    type="password"
+                    placeholder="Pin Number"
+                    class="input input-bordered"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-add-money" class="btn btn-primary">
+                    Add Money
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- -----Add Money Form Ends---- -->
           </div>
         </div>
       </div>
     </main>
 
+    <script src="./js/utilities.js"></script>
     <script src="./js/addMoney.js"></script>
   </body>
 </html>
