@@ -7,6 +7,11 @@ document
     const pinNumber = getInputFieldValueById("input-pin-number");
     // console.log("add money inside addMoney2.js", addMoney, pinNumber);
 
+    if(isNaN(addMoney)){
+      alert("can't add money");
+      return;
+    }
+
     if (pinNumber === 1234) {
       const balance = getTextFieldValueById("account-balance");
       const newBalance = balance + addMoney;
